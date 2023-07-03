@@ -1,0 +1,49 @@
+{
+  "name": "apirestlupitas-functions",
+  "version": "1.0.0",
+  "description": "this APIRest return Information About Sale Taxes,Fuel Economy and OpenRecall of California's Goverment",
+  "main": "app.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "dev:watch": "tsc --watch",
+    "dev:ts": "ts-node-dev --respawn --pretty --transpile-only api/app.ts",
+    "start": "node dist/app.js",
+    "start:dev": "nodemon dist/app.js",
+    "test": "jest"
+  },
+  "author": "Vicente Aguilera Perez",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/multer": "^3.0.0",
+    "@koa/router": "^12.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "module-alias": "^2.2.3",
+    "multer": "^1.4.5-lts.1",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.10.4",
+    "tslib": "^2.5.3",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.17",
+    "@types/koa": "^2.13.6",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.3.1",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.3"
+  }
+}
